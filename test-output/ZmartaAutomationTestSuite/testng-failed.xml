@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [ZmartaAutomationTestSuite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="ChromeTest(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.zmarta.testcases.LoanPagetest">
+        <methods>
+          <include name="VerifyCheckbox"/>
+          <include name="BrowserInitialisation"/>
+          <include name="VerifyLogin"/>
+          <include name="report"/>
+          <include name="VerifyLogo"/>
+          <include name="methodname"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.zmarta.testcases.LoanPagetest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [ZmartaAutomationTestSuite] -->

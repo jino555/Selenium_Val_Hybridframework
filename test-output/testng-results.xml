@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8657" started-at="2019-02-08T10:13:43Z" finished-at="2019-02-08T10:13:51Z">
+    <groups>
+    </groups>
+    <test name="AdminPanel_Test" duration-ms="8657" started-at="2019-02-08T10:13:43Z" finished-at="2019-02-08T10:13:51Z">
+      <class name="com.valency.testcases.login_test">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.login_test@42a311]" name="methodname" is-config="true" duration-ms="6" started-at="2019-02-08T15:43:48Z" finished-at="2019-02-08T15:43:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.valency.testcases.login_test.VerifyLogin() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodname -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.login_test@42a311]" name="setup" is-config="true" duration-ms="60" started-at="2019-02-08T15:43:48Z" finished-at="2019-02-08T15:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:com.valency.testcases.login_test@42a311]" name="VerifyLogin" duration-ms="557" started-at="2019-02-08T15:43:49Z" finished-at="2019-02-08T15:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.login_test@42a311]" name="tearDown" is-config="true" duration-ms="511" started-at="2019-02-08T15:43:49Z" finished-at="2019-02-08T15:43:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=login_test.VerifyLogin()[pri:0, instance:com.valency.testcases.login_test@42a311] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.valency.testcases.login_test -->
+      <class name="com.valency.testcases.users_test">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="BrowserInitialisation" is-config="true" duration-ms="5560" started-at="2019-02-08T15:43:43Z" finished-at="2019-02-08T15:43:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserInitialisation -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="report" is-config="true" duration-ms="209" started-at="2019-02-08T15:43:48Z" finished-at="2019-02-08T15:43:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="setup" is-config="true" duration-ms="4" started-at="2019-02-08T15:43:50Z" finished-at="2019-02-08T15:43:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-08T15:43:50Z" finished-at="2019-02-08T15:43:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.valency.testcases.users_test.VerifyUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodname -->
+        <test-method status="PASS" signature="VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="VerifyUserDetails" duration-ms="935" started-at="2019-02-08T15:43:50Z" data-provider="testdata" finished-at="2019-02-08T15:43:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jino Philip]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jino555]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9745754904]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9745754904]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[VGRO-KL-TVM01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserDetails -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="tearDown" is-config="true" duration-ms="67" started-at="2019-02-08T15:43:51Z" finished-at="2019-02-08T15:43:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUserDetails status=SUCCESS method=users_test.VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="end" is-config="true" duration-ms="56" started-at="2019-02-08T15:43:51Z" finished-at="2019-02-08T15:43:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.valency.testcases.users_test -->
+    </test> <!-- AdminPanel_Test -->
+  </suite> <!-- Suite -->
+</testng-results>

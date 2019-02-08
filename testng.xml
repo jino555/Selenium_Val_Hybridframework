@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  
+  <test name = "AdminPanel_Test">
+  
+  <parameter name = "browser" value ="chrome"/>
+  
+  
+  
+    <classes>
+      <class name="com.valency.testcases.login_test"/>
+      <class name="com.valency.testcases.users_test"/>
+      
+    </classes>
+    
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
