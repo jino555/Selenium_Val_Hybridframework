@@ -194,7 +194,7 @@ public class basetest {
 	public void end() {
 		
 		extent.flush();
-		
+		driver.quit();
 
 		
 	}

@@ -38,19 +38,19 @@ public class login_page extends basetest {
 	 //Actions
 	 
 	
-	 public void login()throws IOException {
+	 public void login(String un , String pw)throws IOException {
 		 
 		 
 		 
 		 
 		 driver.switchTo().alert().accept();
 		 
-		 username.sendKeys("admin");
-		// basetest.extenttest.info("Username entered " );
+		 username.sendKeys(un);
+		 basetest.extenttest.info("Username entered " +un);
 		 
 		 
-		 password.sendKeys("admin@123#");
-		 basetest.extenttest.info("Password entered ");
+		 password.sendKeys(pw);
+		 basetest.extenttest.info("Password entered "+pw);
 		 
 		 
 		 submit.click();

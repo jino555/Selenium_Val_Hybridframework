@@ -7,10 +7,9 @@
     <classes>
       <class name="com.valency.testcases.users_test">
         <methods>
-          <include name="VerifyUserDetails" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="Verifyuserlist" invocation-numbers="0"/>
           <include name="report"/>
-          <include name="end"/>
           <include name="methodname"/>
           <include name="tearDown"/>
           <include name="BrowserInitialisation"/>
@@ -18,8 +17,9 @@
       </class> <!-- com.valency.testcases.users_test -->
       <class name="com.valency.testcases.login_test">
         <methods>
-          <include name="VerifyLogin"/>
           <include name="setup"/>
+          <include name="methodname"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.valency.testcases.login_test -->
     </classes>
