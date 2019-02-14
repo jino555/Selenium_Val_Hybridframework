@@ -24,7 +24,7 @@ import com.valency.base.basetest;
 public class TestUtil extends basetest	 {
 	
 	 public static long PAGE_LOAD_TIMEOUT = 40;
-	 public static long IMPLICIT_WAIT = 30;
+	 public static long IMPLICIT_WAIT = 50;
 	 
 	
 	 public static Object[][] testdata(String excelpath, String sheetname) {

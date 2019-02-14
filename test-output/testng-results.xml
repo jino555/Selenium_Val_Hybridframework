@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11997" started-at="2019-02-13T06:45:17Z" finished-at="2019-02-13T06:45:29Z">
+  <suite name="Suite" duration-ms="11163" started-at="2019-02-14T09:26:11Z" finished-at="2019-02-14T09:26:22Z">
     <groups>
     </groups>
-    <test name="AdminPanel_Test" duration-ms="11997" started-at="2019-02-13T06:45:17Z" finished-at="2019-02-13T06:45:29Z">
+    <test name="AdminPanel_Test" duration-ms="11163" started-at="2019-02-14T09:26:11Z" finished-at="2019-02-14T09:26:22Z">
+      <class name="com.valency.testcases.hubwise_test">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.hubwise_test@968a59]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-14T14:56:21Z" finished-at="2019-02-14T14:56:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.valency.testcases.hubwise_test.Verifyhubwisefilter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodname -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.hubwise_test@968a59]" name="setup" is-config="true" duration-ms="7" started-at="2019-02-14T14:56:21Z" finished-at="2019-02-14T14:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verifyhubwisefilter()[pri:0, instance:com.valency.testcases.hubwise_test@968a59]" name="Verifyhubwisefilter" duration-ms="785" started-at="2019-02-14T14:56:21Z" finished-at="2019-02-14T14:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifyhubwisefilter -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.hubwise_test@968a59]" name="tearDown" is-config="true" duration-ms="77" started-at="2019-02-14T14:56:21Z" finished-at="2019-02-14T14:56:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verifyhubwisefilter status=SUCCESS method=hubwise_test.Verifyhubwisefilter()[pri:0, instance:com.valency.testcases.hubwise_test@968a59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.valency.testcases.hubwise_test -->
       <class name="com.valency.testcases.login_test">
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.login_test@42a311]" name="methodname" is-config="true" duration-ms="4" started-at="2019-02-13T12:15:24Z" finished-at="2019-02-13T12:15:24Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.login_test@8e7350]" name="methodname" is-config="true" duration-ms="6" started-at="2019-02-14T14:56:18Z" finished-at="2019-02-14T14:56:18Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +50,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.login_test@42a311]" name="setup" is-config="true" duration-ms="51" started-at="2019-02-13T12:15:24Z" finished-at="2019-02-13T12:15:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.login_test@8e7350]" name="setup" is-config="true" duration-ms="28" started-at="2019-02-14T14:56:18Z" finished-at="2019-02-14T14:56:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.login_test@42a311]" name="VerifyLogin" duration-ms="847" started-at="2019-02-13T12:15:24Z" data-provider="testdata" finished-at="2019-02-13T12:15:25Z">
+        <test-method status="PASS" signature="VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.login_test@8e7350]" name="VerifyLogin" duration-ms="558" started-at="2019-02-14T14:56:18Z" data-provider="testdata" finished-at="2019-02-14T14:56:19Z">
           <params>
             <param index="0">
               <value>
@@ -38,11 +70,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.login_test@42a311]" name="tearDown" is-config="true" duration-ms="560" started-at="2019-02-13T12:15:25Z" finished-at="2019-02-13T12:15:26Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.login_test@8e7350]" name="tearDown" is-config="true" duration-ms="431" started-at="2019-02-14T14:56:19Z" finished-at="2019-02-14T14:56:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=login_test.VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.login_test@42a311] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=login_test.VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.login_test@8e7350] output={null}]]]>
               </value>
             </param>
           </params>
@@ -51,7 +83,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.valency.testcases.login_test -->
       <class name="com.valency.testcases.users_test">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="BrowserInitialisation" is-config="true" duration-ms="6532" started-at="2019-02-13T12:15:17Z" finished-at="2019-02-13T12:15:23Z">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="BrowserInitialisation" is-config="true" duration-ms="5774" started-at="2019-02-14T14:56:11Z" finished-at="2019-02-14T14:56:17Z">
           <params>
             <param index="0">
               <value>
@@ -62,11 +94,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="report" is-config="true" duration-ms="199" started-at="2019-02-13T12:15:23Z" finished-at="2019-02-13T12:15:23Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="report" is-config="true" duration-ms="223" started-at="2019-02-14T14:56:17Z" finished-at="2019-02-14T14:56:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-13T12:15:26Z" finished-at="2019-02-13T12:15:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="setup" is-config="true" duration-ms="8" started-at="2019-02-14T14:56:19Z" finished-at="2019-02-14T14:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-14T14:56:19Z" finished-at="2019-02-14T14:56:19Z">
           <params>
             <param index="0">
               <value>
@@ -77,11 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="setup" is-config="true" duration-ms="13" started-at="2019-02-13T12:15:26Z" finished-at="2019-02-13T12:15:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="VerifyUserDetails" duration-ms="1367" started-at="2019-02-13T12:15:26Z" data-provider="testdata" finished-at="2019-02-13T12:15:27Z">
+        <test-method status="PASS" signature="VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="VerifyUserDetails" duration-ms="1016" started-at="2019-02-14T14:56:19Z" data-provider="testdata" finished-at="2019-02-14T14:56:20Z">
           <params>
             <param index="0">
               <value>
@@ -112,22 +144,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="tearDown" is-config="true" duration-ms="79" started-at="2019-02-13T12:15:27Z" finished-at="2019-02-13T12:15:27Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="tearDown" is-config="true" duration-ms="79" started-at="2019-02-14T14:56:20Z" finished-at="2019-02-14T14:56:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyUserDetails status=SUCCESS method=users_test.VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyUserDetails status=SUCCESS method=users_test.VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@5cb137] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="setup" is-config="true" duration-ms="3" started-at="2019-02-13T12:15:27Z" finished-at="2019-02-13T12:15:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-13T12:15:27Z" finished-at="2019-02-13T12:15:27Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="methodname" is-config="true" duration-ms="0" started-at="2019-02-14T14:56:20Z" finished-at="2019-02-14T14:56:20Z">
           <params>
             <param index="0">
               <value>
@@ -138,7 +166,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="Verifyuserlist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="Verifyuserlist" duration-ms="392" started-at="2019-02-13T12:15:27Z" data-provider="testdata" finished-at="2019-02-13T12:15:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="setup" is-config="true" duration-ms="1" started-at="2019-02-14T14:56:20Z" finished-at="2019-02-14T14:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verifyuserlist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="Verifyuserlist" duration-ms="259" started-at="2019-02-14T14:56:20Z" data-provider="testdata" finished-at="2019-02-14T14:56:21Z">
           <params>
             <param index="0">
               <value>
@@ -169,18 +201,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifyuserlist -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="tearDown" is-config="true" duration-ms="74" started-at="2019-02-13T12:15:28Z" finished-at="2019-02-13T12:15:28Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="tearDown" is-config="true" duration-ms="86" started-at="2019-02-14T14:56:21Z" finished-at="2019-02-14T14:56:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verifyuserlist status=SUCCESS method=users_test.Verifyuserlist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@4f787b] output={null}]]]>
+                <![CDATA[[TestResult name=Verifyuserlist status=SUCCESS method=users_test.Verifyuserlist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.users_test@5cb137] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.valency.testcases.users_test@4f787b]" name="end" is-config="true" duration-ms="689" started-at="2019-02-13T12:15:28Z" finished-at="2019-02-13T12:15:29Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.valency.testcases.users_test@5cb137]" name="end" is-config="true" duration-ms="697" started-at="2019-02-14T14:56:22Z" finished-at="2019-02-14T14:56:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

@@ -12,7 +12,7 @@
     <classes>
       <class name="com.valency.testcases.login_test"/>
       <class name="com.valency.testcases.users_test"/>
-      
+      <class name="com.valency.testcases.hubwise_test"/>
     </classes>
     
     

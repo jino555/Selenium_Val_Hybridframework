@@ -154,7 +154,7 @@ public void userlist(String nm, String un, String pw, String cpw, String hub) {
 			// WebElement element =  driver.findElement(By.xpath(actual_xpath));
 			 ////*[@id="userTable"]/tbody/tr[1]/td[2]
 	        
-	           
+	  driver.switchTo().alert().accept();
 	         //WebElement serial_no  =  driver.findElement(By.xpath(serial_no_xpath));
 			// WebElement name =  driver.findElement(By.xpath(name_xpath));
 			// WebElement username =  driver.findElement(By.xpath(username_xpath));

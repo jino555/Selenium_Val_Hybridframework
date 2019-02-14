@@ -8,8 +8,8 @@
       <class name="com.valency.testcases.users_test">
         <methods>
           <include name="setup"/>
-          <include name="Verifyuserlist" invocation-numbers="0"/>
           <include name="report"/>
+          <include name="end"/>
           <include name="methodname"/>
           <include name="tearDown"/>
           <include name="BrowserInitialisation"/>
@@ -22,6 +22,14 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.valency.testcases.login_test -->
+      <class name="com.valency.testcases.hubwise_test">
+        <methods>
+          <include name="Verifyhubwisefilter"/>
+          <include name="methodname"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.valency.testcases.hubwise_test -->
     </classes>
   </test> <!-- AdminPanel_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
