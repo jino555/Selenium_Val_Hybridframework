@@ -7,9 +7,10 @@
     <classes>
       <class name="com.valency.testcases.users_test">
         <methods>
+          <include name="setupreport"/>
           <include name="setup"/>
-          <include name="report"/>
-          <include name="end"/>
+          <include name="browserclose"/>
+          <include name="Verifyuserlist" invocation-numbers="0"/>
           <include name="methodname"/>
           <include name="tearDown"/>
           <include name="BrowserInitialisation"/>
@@ -24,7 +25,6 @@
       </class> <!-- com.valency.testcases.login_test -->
       <class name="com.valency.testcases.hubwise_test">
         <methods>
-          <include name="Verifyhubwisefilter"/>
           <include name="methodname"/>
           <include name="tearDown"/>
           <include name="setup"/>

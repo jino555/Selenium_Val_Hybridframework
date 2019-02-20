@@ -18,6 +18,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.valency.base.basetest;
 
@@ -86,6 +88,19 @@ public class TestUtil extends basetest	 {
 	
 	 }
 	 
+	 
+	 public static void acceptAlert(WebDriver driver) {
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.alertIsPresent()).accept();
+
+		}
+	 
+	 
+	 
+	 public static String getTextFromAlert(WebDriver driver) {
+
+			return new WebDriverWait(driver, 30).until(ExpectedConditions.alertIsPresent()).getText();
+			
+		}
 	 
 	
 	  

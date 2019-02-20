@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.valency.base.basetest;
+import com.valency.utils.TestUtil;
 
 public class login_page extends basetest {
 	
@@ -41,9 +42,8 @@ public class login_page extends basetest {
 	 public void login(String un , String pw)throws IOException {
 		 
 		 
-		 
-		 
-		 driver.switchTo().alert().accept();
+		
+		 TestUtil.acceptAlert(driver);
 		 
 		 username.sendKeys(un);
 		 basetest.extenttest.info("Username entered " +un);
@@ -55,6 +55,9 @@ public class login_page extends basetest {
 		 
 		 submit.click();
 		 basetest.extenttest.info("Submit clicked");
+		 
+		 TestUtil.acceptAlert(driver);
+		 
 		 
 	 }
 	 

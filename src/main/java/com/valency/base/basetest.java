@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.tools.ant.types.CommandlineJava.SysProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,8 +20,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -50,7 +53,7 @@ public class basetest {
 	// public String url;
 	
 	
-	public basetest()  {
+	public   basetest()  {
 		
 		
 		       try {
@@ -72,8 +75,8 @@ public class basetest {
 					e.printStackTrace();
 				}
 		
-			
-		
+		      
+		       
 	
 	}
 	
@@ -117,6 +120,9 @@ public class basetest {
         	
         }
 	
+	
+	
+
 	    e_driver = new EventFiringWebDriver(driver);
 	// create object of EventListerHandler to register it with EventFiringWebDriver
 	   eventListener = new WebEventListener();
@@ -129,11 +135,11 @@ public class basetest {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        
+       
         if (pro.getProperty("environment").equals("liveurl"))
         	
         {
-        System.out.println( "url loaded is " +pro.getProperty("liveurl"));
+        System.out.println( "Live url loaded is " +pro.getProperty("liveurl"));
         driver.get(pro.getProperty("liveurl"));
         }
         
@@ -141,7 +147,7 @@ public class basetest {
         else if  (pro.getProperty("environment").contains("stagingurl")) {
         	
         	
-        	 System.out.println( "url loaded is " +pro.getProperty("stagingurl"));
+        	 System.out.println( "Staging url loaded is " +pro.getProperty("stagingurl"));
         	 driver.get(pro.getProperty("stagingurl"));
         	
         }
@@ -150,8 +156,7 @@ public class basetest {
         	
         	System.out.println( "Provide  Application url");
         	
-        }
-        		
+        }	
         		
      
 	}
@@ -159,10 +164,10 @@ public class basetest {
 	
 	   
 	  @BeforeTest
-	   public void report() throws FileNotFoundException {
+	   public void setupreport() throws FileNotFoundException {
 		   
 		  
-		    
+		     System.out.println("=====Extent Report Started======");
 		    htmlreporter = new ExtentHtmlReporter("./test-output/AutomationReport.html");
 		    htmlreporter.config().setDocumentTitle("Project Result");
 		    htmlreporter.config().setReportName("VALENCY MARKETING AUTOMATION REPORT");
@@ -176,7 +181,7 @@ public class basetest {
 	        extent.setSystemInfo("User Name", "Jino Philip");
 	        extent.setSystemInfo("Host Name ", "Jino Philip");
 			extent.attachReporter(htmlreporter);
-		   
+			
 	   }
 	   
 	@BeforeMethod
@@ -191,9 +196,9 @@ public class basetest {
 	
 	@AfterTest
 	
-	public void end() {
+	public void browserclose() {
 		
-		extent.flush();
+		
 		driver.quit();
 
 		
@@ -222,8 +227,7 @@ public class basetest {
 
 		}
 	    extent.flush();
-		//driver.quit();
-		
+	    System.out.println("=====Extent Report generated======");
 	}
 		
    

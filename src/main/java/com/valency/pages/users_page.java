@@ -92,12 +92,11 @@ public class users_page extends basetest {
 	public  void userdetails(String nm, String un, String pw, String cpw, String hub) throws IOException {
 		
 		 
-	   
+
 		
-			
 		   basetest.extenttest.info("Navigated to " +url);
 			
-		     driver.switchTo().alert().accept();
+		    //TestUtil.acceptAlert(driver);
 		     
 		    name.sendKeys(nm);
 		    basetest.extenttest.info("Name entered " +nm);
@@ -121,11 +120,12 @@ public class users_page extends basetest {
 	
 			 submit.click();
 			 
-			 
+			 TestUtil.acceptAlert(driver);
 			
 			}
 
 
+		
 
 
 
@@ -154,7 +154,7 @@ public void userlist(String nm, String un, String pw, String cpw, String hub) {
 			// WebElement element =  driver.findElement(By.xpath(actual_xpath));
 			 ////*[@id="userTable"]/tbody/tr[1]/td[2]
 	        
-	  driver.switchTo().alert().accept();
+	           //driver.switchTo().alert().accept();
 	         //WebElement serial_no  =  driver.findElement(By.xpath(serial_no_xpath));
 			// WebElement name =  driver.findElement(By.xpath(name_xpath));
 			// WebElement username =  driver.findElement(By.xpath(username_xpath));
@@ -165,17 +165,20 @@ public void userlist(String nm, String un, String pw, String cpw, String hub) {
 			 if( name_xpath.getText().equals(nm)) {
 
 			 System.out.println("Name  is verified " +name_xpath.getText());
-			
+			 basetest.extenttest.info("Name is Verfied in the Listing page " +nm);
 			 }
+			 
+			 
 			 
 			 if (username_xpath.getText().equals(un)) {
 			 System.out.println("UserName  is verified " +username_xpath.getText());
-			 
+			 basetest.extenttest.info("UserName is Verfied in the Listing page " +un);
 			 }
+			 
 			 
 			 if (hubcode_xpath.getText().equals(hub)) {
 			 System.out.println("hubCode  is verified " +hubcode_xpath.getText());
-			
+			 basetest.extenttest.info("HubCode is Verfied in the Listing page " +hub);
 			 }
 			 
 			 

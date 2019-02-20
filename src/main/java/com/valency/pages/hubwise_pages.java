@@ -39,49 +39,32 @@ public class hubwise_pages extends basetest{
 	}
 	
 	//Actions
-	public void  hubwisefilter ()  {
+	
+	public void  hubwisefilter(String hub, String mnth)  {
 		
 		
 		hubwise_store.click();
 		
 		
 		
-		Select hub = new Select(choose_hub);
-		hub.selectByVisibleText("VGRO-KL-MLP01");
+		Select choosehub = new Select(choose_hub);
+		choosehub.selectByVisibleText(hub);
 		
+		basetest.extenttest.info(" Selected hub " +hub);
 		
 		Select choosemonth = new Select(choose_month);
-		choosemonth.selectByVisibleText("February");
+		choosemonth.selectByVisibleText(mnth);
+		
+		basetest.extenttest.info(" Selected Month " +mnth);
 		
 		
-		String hubcode = hub_code.getText();
-		Assert.assertEquals("VGRO-KL-MLP01", hubcode);
+		boolean hubcode = hub_code.getText().contains(hub);
+		Assert.assertTrue(hubcode,  "HubCode is not filtered as per selection");
 		
-		System.out.println(" HubCode is filtered as per selection " +hubcode);
-		
-		
-				String  actual_month_list = month.getText();
-				String expected_month = "February";
-			
-			
-			
-			boolean status = actual_month_list.contains(expected_month);
-			
-		 //boolean status =Assert.assertEquals(actual_month_list.contains(expected_month);
-		
-	System.out.println(" Month  is filtered as per selection " +status);
+		boolean  actual_month_list = month.getText().contains(mnth);
+		Assert.assertTrue(actual_month_list,  "Month  is not filtered as per selection");
 		
 		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+}
 	
 }
