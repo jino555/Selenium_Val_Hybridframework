@@ -114,10 +114,13 @@ public class users_page extends basetest {
 		    basetest.extenttest.info("Confirmpassword entered " +cpw);
 		     
 		     
-			Select dropdown = new Select (hub_id);
-			dropdown.selectByVisibleText(hub);
+		//	Select dropdown = new Select (hub_id);
+			//dropdown.selectByVisibleText(hub);
 	  
-	
+	       TestUtil.dropdown(driver, hub_id, hub);
+		    
+		    
+		    
 			 submit.click();
 			 
 			 TestUtil.acceptAlert(driver);

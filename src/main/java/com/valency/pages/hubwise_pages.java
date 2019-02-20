@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.valency.base.basetest;
+import com.valency.utils.TestUtil;
 
 public class hubwise_pages extends basetest{
 	
@@ -45,15 +46,17 @@ public class hubwise_pages extends basetest{
 		
 		hubwise_store.click();
 		
+		TestUtil.dropdown(driver, choose_hub, hub);
 		
-		
-		Select choosehub = new Select(choose_hub);
-		choosehub.selectByVisibleText(hub);
+		//Select choosehub = new Select(choose_hub);
+		//choosehub.selectByVisibleText(hub);
 		
 		basetest.extenttest.info(" Selected hub " +hub);
 		
-		Select choosemonth = new Select(choose_month);
-		choosemonth.selectByVisibleText(mnth);
+		TestUtil.dropdown(driver, choose_month, mnth);
+		
+		//Select choosemonth = new Select(choose_month);
+		//choosemonth.selectByVisibleText(mnth);
 		
 		basetest.extenttest.info(" Selected Month " +mnth);
 		

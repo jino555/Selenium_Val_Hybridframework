@@ -19,6 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.valency.base.basetest;
@@ -103,6 +104,16 @@ public class TestUtil extends basetest	 {
 		}
 	 
 	
+	 public static void  dropdown(WebDriver driver, WebElement element, String text) {
+		 
+		        Select dropdown = new Select(element);
+				 dropdown.selectByVisibleText(text);
+		 
+		 
+	 }
+	 
+	 
+	 
 	  
 	 }
 	 
