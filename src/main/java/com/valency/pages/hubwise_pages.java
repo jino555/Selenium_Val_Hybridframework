@@ -48,15 +48,11 @@ public class hubwise_pages extends basetest{
 		
 		TestUtil.dropdown(driver, choose_hub, hub);
 		
-		//Select choosehub = new Select(choose_hub);
-		//choosehub.selectByVisibleText(hub);
 		
 		basetest.extenttest.info(" Selected hub " +hub);
 		
 		TestUtil.dropdown(driver, choose_month, mnth);
 		
-		//Select choosemonth = new Select(choose_month);
-		//choosemonth.selectByVisibleText(mnth);
 		
 		basetest.extenttest.info(" Selected Month " +mnth);
 		
