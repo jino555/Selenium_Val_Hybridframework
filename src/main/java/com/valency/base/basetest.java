@@ -83,7 +83,7 @@ public class basetest {
 	
 
 	
-	@Parameters({"browser", "project.url"})
+	@Parameters({"browser", "url"})
 	@BeforeTest
 	
 	 public void BrowserInitialisation(String browser ,String url) throws Exception {
