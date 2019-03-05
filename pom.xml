@@ -141,7 +141,7 @@
                     <suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
               <executionbrowser>${browser}</executionbrowser>
-              <url>${url}</url>
+              <url>${project.url}</url>
               
                 
             </configuration>
