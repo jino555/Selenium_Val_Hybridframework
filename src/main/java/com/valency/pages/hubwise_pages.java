@@ -29,6 +29,8 @@ public class hubwise_pages extends basetest{
 	@FindBy(xpath = "//*[@id='storeTable']/tbody/tr[1]/td[8]")
 	WebElement hub_code; 
 	
+	
+	
 	@FindBy(xpath = "//*[@id='storeTable']/tbody/tr[1]/td[9]")
 	WebElement month; 
 	
@@ -57,13 +59,24 @@ public class hubwise_pages extends basetest{
 		basetest.extenttest.info(" Selected Month " +mnth);
 		
 		
-		boolean hubcode = hub_code.getText().contains(hub);
-		Assert.assertTrue(hubcode,  "HubCode is not filtered as per selection");
+	//	boolean hubcode = hub_code.getText().contains(hub);
+		//Assert.assertTrue(hubcode,  "HubCode is not filtered as per selection");
 		
 		boolean  actual_month_list = month.getText().contains(mnth);
 		Assert.assertTrue(actual_month_list,  "Month  is not filtered as per selection");
 		
 		
 }
+	
+	public String verifyfilter() {
+		
+		return	hub_code.getText();
+		
+		
+			
+		
+	}
+	
+	
 	
 }

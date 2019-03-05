@@ -41,14 +41,13 @@ public class login_page extends basetest {
 	
 	 public void login(String un , String pw)throws IOException {
 		 
-		 
 		
-		 TestUtil.acceptAlert(driver);
+		 
+		 
 		 
 		 username.sendKeys(un);
-		 basetest.extenttest.info("Username entered " +un);
-		 
-		 
+		 basetest.extenttest.info("Username entered "+un);
+	
 		 password.sendKeys(pw);
 		 basetest.extenttest.info("Password entered "+pw);
 		 
@@ -62,9 +61,18 @@ public class login_page extends basetest {
 		 
 	 }
 	 
+	  public String pagetitle() {
+		  
+		  return driver.getTitle();
+		  
+	  }
 	 
 	 
-	 
+    public String loginbutton() {
+		  
+		  return submit.getText();
+	  }
+	  
 	 
 	 
 }

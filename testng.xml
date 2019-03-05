@@ -5,14 +5,10 @@
   
   <test name = "AdminPanel_Test">
   
-  <parameter name = "browser" value ="chrome"/>
-  
-  
-  
+ 
     <classes>
       <class name="com.valency.testcases.login_test"/>
-      <class name="com.valency.testcases.users_test"/>
-      <class name="com.valency.testcases.hubwise_test"/>
+    
     </classes>
     
    

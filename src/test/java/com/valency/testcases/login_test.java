@@ -2,6 +2,7 @@ package com.valency.testcases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -31,7 +32,16 @@ public class login_test extends basetest{
   
   public void VerifyLogin(String username , String password) throws IOException {
 	  
+	  
+	  TestUtil.acceptAlert(driver);
+	  
+	  Assert.assertTrue(login.pagetitle().contains("Admin Panel"));
+	  System.out.println("Login Page verified");
+	  
+	  
 	  login.login(username, password);
+	  
+	 
 	  
   }
   

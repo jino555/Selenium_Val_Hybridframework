@@ -1,5 +1,7 @@
 package com.valency.testcases;
 
+import org.apache.tools.ant.types.CommandlineJava.SysProperties;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -31,7 +33,11 @@ public class hubwise_test  extends basetest{
 		
 		
 	hub.hubwisefilter(hubwise, month);
-		
+	
+	
+	
+	Assert.assertTrue(hub.verifyfilter().contains("hubwise"));
+		System.out.println("HubCode is not filtered as per selection");
 	}
 	
  

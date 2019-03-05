@@ -83,13 +83,13 @@ public class basetest {
 	
 
 	
-	@Parameters("browser")
+	@Parameters({"browser", "url"})
 	@BeforeTest
 	
-	 public void BrowserInitialisation(String browser) throws Exception {
+	 public void BrowserInitialisation(String browser ,String url) throws Exception {
 		
 		
-	if(browser.equalsIgnoreCase("chrome"))
+	if(browser.equalsIgnoreCase("Chrome"))
 	{
 		System.setProperty("webdriver.chrome.driver", pro.getProperty("ChromeDriver"));
         driver = new ChromeDriver();
@@ -103,7 +103,7 @@ public class basetest {
 	}
 	
 	
-        else if (browser.equalsIgnoreCase("firefox"))
+        else if (browser.equals("firefox"))
     	{
     		System.setProperty("webdriver.gecko.driver", pro.getProperty("GeckoDriver"));
             driver = new FirefoxDriver(); 
@@ -135,8 +135,11 @@ public class basetest {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-       
-        if (pro.getProperty("environment").equals("liveurl"))
+        
+        
+      driver.get(url);
+     
+      /*  if (pro.getProperty("environment").equals("liveurl"))
         	
         {
         System.out.println( "Live url loaded is " +pro.getProperty("liveurl"));
@@ -158,7 +161,7 @@ public class basetest {
         	
         }	
         		
-     
+     */
 	}
 	
 	
